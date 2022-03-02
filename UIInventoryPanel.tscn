@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://DWInventoryDemo/Assets/InventoryGrid.png" type="Texture" id=1]
+[ext_resource path="res://DWInventoryDemo/UIInventoryPanel.gd" type="Script" id=2]
+[ext_resource path="res://DWInventoryDemo/Assets/Fonts/CoordinateFont.tres" type="DynamicFont" id=3]
+
+
+[node name="Panel" type="Panel"]
+margin_right = 32.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 32, 32 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GridSprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+centered = false
+
+[node name="Label" type="Label" parent="."]
+visible = false
+margin_right = 32.0
+margin_bottom = 32.0
+custom_fonts/font = ExtResource( 3 )
+text = "test"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}

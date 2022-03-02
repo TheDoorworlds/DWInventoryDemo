@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://UI/Depreciated/UIInventoryGrid.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Themes/DefaultTheme.tres" type="Theme" id=2]
+[ext_resource path="res://Assets/UI/KeyboardKey-Gray.png" type="Texture" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+resource_local_to_scene = true
+
+[node name="UIInventoryGrid" type="GridContainer" groups=["inv_grid"]]
+pause_mode = 2
+margin_right = 32.0
+margin_bottom = 32.0
+grow_horizontal = 0
+grow_vertical = 0
+rect_min_size = Vector2( 32, 32 )
+mouse_filter = 2
+theme = ExtResource( 2 )
+custom_constants/vseparation = 0
+custom_constants/hseparation = 0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 2147483648
+collision_mask = 3221225472
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="Area2D"]
+texture = ExtResource( 3 )
+centered = false

@@ -1,0 +1,68 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://icon.png" type="Texture" id=1]
+[ext_resource path="res://DWInventoryDemo/Player.gd" type="Script" id=2]
+[ext_resource path="res://DWInventoryDemo/GUI.gd" type="Script" id=3]
+[ext_resource path="res://DWInventoryDemo/UIGameMenu.tscn" type="PackedScene" id=4]
+[ext_resource path="res://DWInventoryDemo/Items/WorldItems/WorldItemBase.tscn" type="PackedScene" id=5]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 36.0
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 104.307
+
+[node name="TestScene" type="Node2D"]
+position = Vector2( 480, 272 )
+
+[node name="Player" type="KinematicBody2D" parent="."]
+script = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+rotation = 1.57079
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="Player"]
+texture = ExtResource( 1 )
+
+[node name="Area2D" type="Area2D" parent="Player" groups=["player"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player/Area2D"]
+shape = SubResource( 2 )
+
+[node name="GUI" type="CanvasLayer" parent="."]
+script = ExtResource( 3 )
+GAME_MENU = NodePath("UIGameMenu")
+
+[node name="UIGameMenu" parent="GUI" instance=ExtResource( 4 )]
+visible = false
+
+[node name="WorldItemBase" parent="." instance=ExtResource( 5 )]
+position = Vector2( 56, 160 )
+
+[node name="WorldItemBase2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 216, -50 )
+
+[node name="Label" type="Label" parent="."]
+anchor_right = 1.0
+margin_left = -304.0
+margin_top = -240.0
+margin_right = 360.0
+margin_bottom = -141.0
+text = "Movement: WASD
+
+ESC opens menu
+
+If you open the menu prior to picking up items, they align as they should.
+If you collect items BEFORE opening the menu at least once, they end up 64 pixels too high for the grid."
+align = 1
+
+[node name="Label2" type="Label" parent="."]
+anchor_right = 1.0
+margin_left = -328.0
+margin_top = 240.0
+margin_right = 336.0
+margin_bottom = 312.0
+text = "if you collect one (1) item before opening and one (1) after opening, the second item picks up fine.
+The slots where the first item SHOULD be are unsuable as thought the first item is in the correct place."
+align = 1

@@ -1,0 +1,155 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://DWInventoryDemo/UIInventoryGridBase.tscn" type="PackedScene" id=1]
+[ext_resource path="res://DWInventoryDemo/Assets/DefaultTheme.tres" type="Theme" id=3]
+[ext_resource path="res://DWInventoryDemo/UIInventoryTab.gd" type="Script" id=5]
+
+[node name="UIInventoryTab" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -240.0
+margin_bottom = -165.0
+rect_min_size = Vector2( 720, 375 )
+mouse_filter = 2
+theme = ExtResource( 3 )
+script = ExtResource( 5 )
+
+[node name="VerticalOrganizer" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 8.0
+margin_top = 8.0
+margin_right = -8.0
+margin_bottom = -8.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PouchtConsumables" type="HBoxContainer" parent="VerticalOrganizer"]
+margin_right = 768.0
+margin_bottom = 58.0
+mouse_filter = 2
+
+[node name="Pouch" type="VBoxContainer" parent="VerticalOrganizer/PouchtConsumables"]
+margin_right = 191.0
+margin_bottom = 58.0
+mouse_filter = 2
+size_flags_horizontal = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="VerticalOrganizer/PouchtConsumables/Pouch"]
+margin_right = 191.0
+margin_bottom = 14.0
+size_flags_horizontal = 3
+text = "Pocket"
+align = 1
+
+[node name="HSeparator" type="HSeparator" parent="VerticalOrganizer/PouchtConsumables/Pouch"]
+margin_top = 18.0
+margin_right = 191.0
+margin_bottom = 22.0
+mouse_filter = 2
+size_flags_horizontal = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PouchInvContainer" type="CenterContainer" parent="VerticalOrganizer/PouchtConsumables/Pouch"]
+margin_top = 26.0
+margin_right = 191.0
+margin_bottom = 58.0
+mouse_filter = 2
+
+[node name="PouchGrid" parent="VerticalOrganizer/PouchtConsumables/Pouch/PouchInvContainer" instance=ExtResource( 1 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 79.0
+margin_top = 0.0
+margin_right = 111.0
+margin_bottom = 32.0
+mouse_filter = 2
+InventoryColumns = 3
+InventorySlots = 9
+inv_name = "Pouch"
+
+[node name="Consumables" type="VBoxContainer" parent="VerticalOrganizer/PouchtConsumables"]
+margin_left = 195.0
+margin_right = 768.0
+margin_bottom = 58.0
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 3.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="VerticalOrganizer/PouchtConsumables/Consumables"]
+margin_right = 573.0
+margin_bottom = 14.0
+size_flags_horizontal = 3
+text = "Consumables"
+align = 1
+
+[node name="HSeparator" type="HSeparator" parent="VerticalOrganizer/PouchtConsumables/Consumables"]
+margin_top = 18.0
+margin_right = 573.0
+margin_bottom = 22.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ConsumablesInvContainer" type="CenterContainer" parent="VerticalOrganizer/PouchtConsumables/Consumables"]
+margin_top = 26.0
+margin_right = 573.0
+margin_bottom = 26.0
+mouse_filter = 2
+
+[node name="Cart" type="VBoxContainer" parent="VerticalOrganizer"]
+margin_top = 62.0
+margin_right = 768.0
+margin_bottom = 120.0
+mouse_filter = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="VerticalOrganizer/Cart"]
+margin_right = 768.0
+margin_bottom = 14.0
+text = "Cart"
+align = 1
+
+[node name="HSeparator" type="HSeparator" parent="VerticalOrganizer/Cart"]
+margin_top = 18.0
+margin_right = 768.0
+margin_bottom = 22.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CartInvContainer" type="CenterContainer" parent="VerticalOrganizer/Cart"]
+margin_top = 26.0
+margin_right = 768.0
+margin_bottom = 58.0
+mouse_filter = 2
+
+[node name="CartGrid" parent="VerticalOrganizer/Cart/CartInvContainer" instance=ExtResource( 1 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 368.0
+margin_top = 0.0
+margin_right = 400.0
+margin_bottom = 32.0
+mouse_filter = 2
+InventoryColumns = 6
+InventorySlots = 30
+inv_name = "Cart"
+
+[node name="ItemsContainer" type="Node2D" parent="."]

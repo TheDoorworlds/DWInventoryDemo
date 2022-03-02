@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://DWInventoryDemo/Assets/TabDisabled.png" type="Texture" id=1]
+[ext_resource path="res://DWInventoryDemo/Items/ItemBuildingBlock.gd" type="Script" id=2]
+
+[sub_resource type="StyleBoxFlat" id=1]
+
+[node name="ItemBuildingBlock" type="Panel"]
+modulate = Color( 1, 0.988235, 0.25098, 1 )
+margin_right = 32.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 32, 32 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 1.5, 1.5 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( -3, -3 )
