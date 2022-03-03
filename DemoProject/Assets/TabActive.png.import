@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/InventoryGrid.png-c2e0977f692239a31ead93f64c4c02fc.stex"
+path="res://.import/TabActive.png-4ad8ca7c348d2f8ddeec84caaeb5cbd1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DWInventoryDemo/Assets/InventoryGrid.png"
-dest_files=[ "res://.import/InventoryGrid.png-c2e0977f692239a31ead93f64c4c02fc.stex" ]
+source_file="res://Assets/TabActive.png"
+dest_files=[ "res://.import/TabActive.png-4ad8ca7c348d2f8ddeec84caaeb5cbd1.stex" ]
 
 [params]
 

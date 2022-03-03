@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TabNormal.png-9a43d6b8b7bc014c3242eac46cd8f63f.stex"
+path="res://.import/TabDisabled.png-f5ed97953e9ab37fff9739a594dd427f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DWInventoryDemo/Assets/TabNormal.png"
-dest_files=[ "res://.import/TabNormal.png-9a43d6b8b7bc014c3242eac46cd8f63f.stex" ]
+source_file="res://Assets/TabDisabled.png"
+dest_files=[ "res://.import/TabDisabled.png-f5ed97953e9ab37fff9739a594dd427f.stex" ]
 
 [params]
 

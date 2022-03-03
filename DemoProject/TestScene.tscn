@@ -1,10 +1,10 @@
 [gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://icon.png" type="Texture" id=1]
-[ext_resource path="res://DWInventoryDemo/Player.gd" type="Script" id=2]
-[ext_resource path="res://DWInventoryDemo/GUI.gd" type="Script" id=3]
-[ext_resource path="res://DWInventoryDemo/UIGameMenu.tscn" type="PackedScene" id=4]
-[ext_resource path="res://DWInventoryDemo/Items/WorldItems/WorldItemBase.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Player.gd" type="Script" id=2]
+[ext_resource path="res://GUI.gd" type="Script" id=3]
+[ext_resource path="res://UIGameMenu.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Items/WorldItems/WorldItemBase.tscn" type="PackedScene" id=5]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 36.0

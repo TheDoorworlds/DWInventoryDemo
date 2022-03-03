@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TabActive.png-8eda28cf5d494083c7a5c8693a14c93a.stex"
+path="res://.import/Woodtexture.png-1a48e090d6f65fa77b6b82495ae4cb52.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DWInventoryDemo/Assets/TabActive.png"
-dest_files=[ "res://.import/TabActive.png-8eda28cf5d494083c7a5c8693a14c93a.stex" ]
+source_file="res://Assets/Woodtexture.png"
+dest_files=[ "res://.import/Woodtexture.png-1a48e090d6f65fa77b6b82495ae4cb52.stex" ]
 
 [params]
 
@@ -19,10 +19,10 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
-flags/repeat=0
-flags/filter=false
+flags/repeat=1
+flags/filter=true
 flags/mipmaps=false
-flags/anisotropic=true
+flags/anisotropic=false
 flags/srgb=2
 process/fix_alpha_border=true
 process/premult_alpha=false

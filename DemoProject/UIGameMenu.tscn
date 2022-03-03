@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://DWInventoryDemo/UIGameMenu.gd" type="Script" id=1]
-[ext_resource path="res://DWInventoryDemo/Assets/DefaultTheme.tres" type="Theme" id=2]
-[ext_resource path="res://DWInventoryDemo/UIInventoryTab.tscn" type="PackedScene" id=3]
+[ext_resource path="res://UIGameMenu.gd" type="Script" id=1]
+[ext_resource path="res://Assets/DefaultTheme.tres" type="Theme" id=2]
+[ext_resource path="res://UIInventoryTab.tscn" type="PackedScene" id=3]
 
 [node name="UIGameMenu" type="Control"]
 pause_mode = 2

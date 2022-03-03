@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://DWInventoryDemo/Assets/TabDisabled.png" type="Texture" id=1]
-[ext_resource path="res://DWInventoryDemo/Items/ItemBuildingBlock.gd" type="Script" id=2]
+[ext_resource path="res://Assets/TabDisabled.png" type="Texture" id=1]
+[ext_resource path="res://Items/ItemBuildingBlock.gd" type="Script" id=2]
 
 [sub_resource type="StyleBoxFlat" id=1]
 

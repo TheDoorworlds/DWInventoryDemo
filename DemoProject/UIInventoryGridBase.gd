@@ -3,7 +3,7 @@ class_name InventoryGrid extends GridContainer
 # Signals
 
 # Constants
-const INVENTORY_PANEL_SCENE := preload("res://DWInventoryDemo/UIInventoryPanel.tscn")
+const INVENTORY_PANEL_SCENE := preload("res://UIInventoryPanel.tscn")
 const CELL_SIZE := 32
 
 # Export Variables

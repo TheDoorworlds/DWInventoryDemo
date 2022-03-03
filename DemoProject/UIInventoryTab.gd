@@ -1,7 +1,7 @@
 extends Control
 
 # Testing Vars
-var item_scene := preload("res://DWInventoryDemo/Items/InventoryItemBase.tscn")
+var item_scene := preload("res://Items/InventoryItemBase.tscn")
 
 # Signals
 
